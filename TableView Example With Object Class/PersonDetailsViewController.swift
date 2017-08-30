@@ -9,10 +9,22 @@
 import UIKit
 
 class PersonDetailsViewController: UIViewController {
-
+    @IBOutlet weak var labelPersonName: UILabel!
+    
+    @IBOutlet weak var labelPersonInfo: UILabel!
+    @IBOutlet weak var imageViewPerson: UIImageView!
+    
+    var person = Person()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        imageViewPerson.image = person.image
+        labelPersonName.text = "His name is : \(person.name)"
+        labelPersonInfo.text = "Id : \(person.id) and Gender : \(person.gender) \nSome info : \(person.info)"
+        
+        
         // Do any additional setup after loading the view.
     }
 
