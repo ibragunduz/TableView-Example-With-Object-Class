@@ -59,7 +59,7 @@ class ViewController: UIViewController , UITableViewDataSource,UITableViewDelega
     
     func initializePersons(){
         let person1 = Person()
-        person1.name = "Ibrahim Gündüz"
+        person1.name = "Ibrahim Gunduz"
         person1.gender = "Male"
         person1.id = 1635
         person1.image = UIImage(named: "ibrahim.jpg")!
